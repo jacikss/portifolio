@@ -1,0 +1,120 @@
+:root {
+    --cor-primaria-fundo: #2C3E50; /* Azul-marinho */
+    --cor-secundaria-texto: #ECF0F1; /* Branco-gelo */
+    --cor-terciaria-texto: #1ABC9C; /* Verde-menta */
+    --cor-quartenaria-detalhes: #16A085; /* Verde-escuro */
+    --cor-hoover: #148F77; /* Verde-hoover */
+
+    --fonte-principal: 'Fragment Mono', monospace;
+    --fonte-secundaria: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria-fundo);
+    color: var(--cor-secundaria-texto);
+}
+
+.cabecalho {
+    background-color: var(--cor-quartenaria-detalhes);
+    padding: 2% 0 1.5% 0;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu horizontalmente */
+    align-items: center; /* Alinha os itens do menu verticalmente no meio */
+    gap: 80px;
+}
+
+.cabecalho__menu__links {
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color: var(--cor-secundaria-texto);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 4% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: var(--fonte-principal);
+    text-align: justify;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria-texto);
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    text-align: justify;
+    font-weight: 90;
+}
+
+.apresentacao__links__conteudo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-terciaria-texto);
+    font-weight: 600;
+    text-align: center;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__click {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 360px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria-texto);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    border: 2px solid var(--cor-quartenaria-detalhes);
+}
+
+.apresentacao__links__click:hover {
+    background-color: var(--cor-hoover);
+}
+
+span {
+    border: 3px solid var(--cor-quartenaria-detalhes);
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-secundaria-texto);
+    background-color: var(--cor-quartenaria-detalhes);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+}

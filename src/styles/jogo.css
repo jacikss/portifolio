@@ -1,0 +1,158 @@
+:root {
+    --cor-primaria-fundo: #2C3E50; /* Azul-marinho */
+    --cor-secundaria-texto: #ECF0F1; /* Branco-gelo */
+    --cor-terciaria-texto: #1ABC9C; /* Verde-menta */
+    --cor-quartenaria-detalhes: #16A085; /* Verde-escuro */
+    --cor-hoover: #148F77; /* Verde-hoover */
+
+    --fonte-principal: 'Fragment Mono', monospace;
+    --fonte-secundaria: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria-fundo);
+    color: var(--cor-secundaria-texto);
+    font-family: var(--fonte-secundaria); /* Usando a fonte definida no CSS 1 */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 36px;
+    color: var(--cor-quartenaria-detalhes); /* Usando cor definida no CSS 1 */
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Conteúdo do Jogo */
+.game-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Input e botão dentro do jogo */
+.game-container input,
+.game-container button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.game-container input {
+    width: 60%;
+    max-width: 200px;
+    text-align: center;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.game-container button {
+    background-color: var(--cor-terciaria-texto); /* Usando cor definida no CSS 1 */
+    color: var(--cor-secundaria-texto);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game-container button:hover {
+    background-color: var(--cor-hoover); /* Usando cor definida no CSS 1 */
+}
+
+/* Tentativas anteriores (com efeito de scroll se muitas tentativas) */
+.game-log {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.game-log ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.game-log li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.game-container img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Mensagens e links adicionais */
+.game-container p {
+    font-size: 18px;
+    color: var(--cor-secundaria-texto); /* Usando cor definida no CSS 1 */
+}
+
+.game-container a {
+    color: var(--cor-terciaria-texto); /* Usando cor definida no CSS 1 */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.game-container a:hover {
+    color: var(--cor-hoover); /* Usando cor definida no CSS 1 */
+}
+
+/* Estilo para o popup de vitória */
+.win-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.win-popup .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.win-popup button {
+    background-color: var(--cor-quartenaria-detalhes); /* Usando cor definida no CSS 1 */
+    color: var(--cor-secundaria-texto);
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.win-popup button:hover {
+    background-color: var(--cor-hoover); /* Usando cor definida no CSS 1 */
+}
